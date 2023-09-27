@@ -1,11 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+:root {
+    /*Light mode*/
+    --primary-light:  #A8E6CE;
+    --secondary-light: #FFD3B5;
+    --background-light: #FF8C94;
+    --text-light:  #DCEDC2; 
+
+    /*Dark mode*/
+    --primary-dark: #FF6666;
+    --secondary-dark: #66CCCC;
+    --background-dark: #333333;
+    --text-dark: #CCCCCC;
+}
+
+body[data-theme="light"] {
+    --primary: var(--primary-light);
+    --secondary: var(--secondary-light);
+    --background: var(--background-light);
+    --text: var(--text-light);
+}
+
+body[data-theme="dark"] {
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+}
+
 body{
-    background-color: #131316;
-    color: #ffffff;
+    background-color: var(--background);
+    color: var(--text);
     font-family: 'Croissant One', cursive;
     padding: 0;
     margin: 0;
-
 }
 
 section {
@@ -13,6 +40,19 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+}
+
+.name-card {
+    border: solid 3px var(--primary);
+    box-shadow: 15px 10px var(--secondary);
+    padding: 15px; 
+    float: left;
+    text-align: left;
+    border-radius: 25px;
+}
+
+.intro-text {
+    margin: 10% 1% 0 1%;
 }
 
 .hidden {
@@ -32,25 +72,32 @@ section {
 
 .logos {
     display: inline-flex;
+    padding: 5px;
+    border-radius: 25px;
+    border: solid 3px var(--primary);
+    box-shadow: 15px 10px var(--secondary);
+    background-color: whitesmoke;
+}
+
+img {
+    height: 80px;
+    margin: 5px;
 }
 
 .logo:nth-child(1){
-    margin: 5px;
+  
 }
 
 .logo:nth-child(2) {
     transition-delay: 200ms;
-    margin: 5px;
 }
 
 .logo:nth-child(3) {
     transition-delay: 400ms;
-    margin: 5px;
 
 }
 
 .logo:nth-child(4) {
     transition-delay: 600ms;
-    margin: 5px;
 }
 
