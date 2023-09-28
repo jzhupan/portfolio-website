@@ -6,21 +6,37 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="app.js"></script>
 
 </head>
 <body data-theme="light">
+    <nav class="topnav" id="nav-bar">
+    
+        <a href="/home/" class="active">
+            Home
+        </a>
+        <a href="/projects/">
+            Projects
+        </a>
+
+        <a href="/contact/">
+            Contact
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i></a>
+    </nav>
 
         <button id="theme-button">Toggle Theme</button>
 
         <div class="name-title">
                 <h1>Jennie Zhu</h1>
-                <p >Self-taught Front-End Developer
+                <p >Self-taught Front-End Develiper
                     <br/>
                     Designer & Illustrator</p>    
         </div>
 
-
+   
 
     <section class="hidden">
         <h1>Welcome</h1>
@@ -35,7 +51,7 @@
         </p>
     </section>
     
-    <section class="hidden">
+    <section class="hidden projects">
         <h2>Project 1</h2>
         <p>Notable Libraries and Frameworks used:</p>
         <div class="logos">
@@ -54,7 +70,7 @@
         </div>
     </section>
 
-    <section class="hidden">
+    <section class="hidden projects">
         <h2>Project 2</h2>
         <p>Notable Libraries and Frameworks used:</p>
         <div class="logos">
