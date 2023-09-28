@@ -27,6 +27,22 @@ body[data-theme="dark"] {
     --text: var(--text-dark);
 }
 
+
+button {
+    margin: 1%;
+    float: right;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--text);
+    color: var(--secondary);
+    font-family: 'Croissant One', cursive;
+    font-size: 15px;
+    text-shadow: 1px 1px var(--background);
+    box-shadow: 5px 5px 5px var(--primary);
+    padding: 0.5%;
+}
+
+
 body{
     background-color: var(--background);
     color: var(--text);
