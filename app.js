@@ -54,4 +54,7 @@ function navFunction(){
     }
 }
 
-
+function submitFunction(){
+    document.getElementById('myForm').submit();
+    alert('Thank you for submitting! This is just a demo, please contact me through jzhupan@gmail.com for real inquiries.')
+}
