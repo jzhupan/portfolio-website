@@ -81,12 +81,13 @@ section {
 
 #nav-bar {
     position: fixed;
-    margin-top: 1%;
     margin-left: 3%;
+    padding-top: 1%;
     overflow: hidden;
     text-align: center;    
     width: 95%;
     background-color: var(--background);
+    height:auto;
     z-index: 1;
 }
 
