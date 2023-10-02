@@ -2,11 +2,30 @@
 document.addEventListener("DOMContentLoaded", () => {
     const themeButton = document.getElementById("theme-button");
 
+    
+
     themeButton.addEventListener("click", () => {
+
         const currentTheme = document.body.getAttribute("data-theme");
         const newTheme = currentTheme === "light" ? "dark" : "light";
         document.body.setAttribute("data-theme", newTheme);
+
+
+             const icon = document.getElementById('iconImage');
+             const darkTheme = document.getElementById('iconImage').src = './images/logo-icons/bxs-moon.png';
+             const lightTheme = document.getElementById('iconImage').src = './images/logo-icons/bxs-sun.png';
+
+            if(newTheme === "light"){
+                icon.src = darkTheme
+            } else if(newTheme === "dark"){
+                icon.src = lightTheme
+            }
+
+            
+
+
     });
+   
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -23,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const hiddenElements = document.querySelectorAll('.hidden')
     hiddenElements.forEach((el) => observer.observe(el))
 
-
+    
 });
 
 function navFunction(){

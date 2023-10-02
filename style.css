@@ -150,12 +150,12 @@ section {
 }
 
 img {
-    height: 80px;
+    height: 30px;
     margin: 5px;
 }
 
 .logo:nth-child(1){
-  
+  transition-delay: 50ms;
 }
 
 .logo:nth-child(2) {
