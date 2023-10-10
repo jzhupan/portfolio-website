@@ -6,8 +6,12 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script defer src="app.js"></script>
+    <script defer src="lightbox-plus-jquery.js"></script>
+
 
 </head>
 <body data-theme="light">
@@ -64,7 +68,8 @@
             
             </p>
             <a href="https://github.com/jzhupan/Image-To-Text-Translator-App.git" target="_blank" style="text-decoration:none; color: white;">Click Here for Github Repo</a>
-            <h2>Gif Demo:</h2>
+            <br/>
+            <span>Gif Demo:</span>
             <div class="gif-demo">
                <img src="https://media.giphy.com/media/3d1Z8kK9ap0h4sru3y/giphy.gif" alt="live demo gif for the image to text translator app">
             </div>
@@ -99,16 +104,25 @@
                 <span class="inline">Live Demo (WIP)</span>
 
 
-            <div class="pic-stack inline">
+            <!-- <div class="gallery">
                <img src="./images/homeSS.png" alt="screenshots of a financial dashboard">
                <img src="./images/StockSearchSS.png" alt="screenshots of a financial dashboard">
 
+            </div> -->
+
+            <div class="lightbox-container">
+                <div class="gallery inline">
+                    <a href="./images/homeSS.png" data-lightbox="dashboard" data-title="Financial Pulse Home Page">
+                    <img src="./images/homeSS.png" alt="screenshots of a financial dashboard">
+                    </a>
+                    <a href="./images/StockSearchSS.png" data-lightbox="dashboard" data-title="Financial Pulse Stock Search Page">
+                        <img src="./images/StockSearchSS.png" alt="screenshots of a financial dashboard">
+                    </a>
+                </div>
             </div>
 
-
-
-
-
+            <a class="target-blank" href="./images/homeSS.png" target="_blank" >see full size</a>
+            <a class="target-blank" href="./images/homeSS.png" target="_blank" >see full size</a>
 
             <br/>
             <span>Notable Libraries and Frameworks used:</span>
