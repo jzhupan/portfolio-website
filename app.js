@@ -58,3 +58,13 @@ function submitFunction(){
     document.getElementById('myForm').submit();
     alert('Thank you for submitting! This is just a demo, please contact me through jzhupan@gmail.com for real inquiries.')
 }
+
+
+//Browser Icon
+let link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+}
+link.href = './images/logo-icons/black-icon-transparentbg.png'
