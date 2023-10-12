@@ -226,7 +226,16 @@ h1 {
     border: solid 3px var(--primary);
     box-shadow: 15px 10px var(--secondary);
     background-color: whitesmoke;
-
+}
+.logos-container2 {
+    width: auto;
+    display: inline-flex;
+    padding: 10px;
+    margin: 1% -25%;
+    border-radius: 25px;
+    border: solid 3px var(--primary);
+    box-shadow: 15px 10px var(--secondary);
+    background-color: whitesmoke;
 }
 
 .logo {
