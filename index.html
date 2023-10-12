@@ -17,49 +17,61 @@
 <body data-theme="light">
     <div class="topnav" id="nav-bar">
     
-            <a href="#home" class="active">
+            <a class="text-link" href="#home" class="active">
                 Home
             </a>
-            <a href="#projects">
+            <a class="text-link" href="#projects">
                 Projects
             </a>
-            <a href="#about">
+            <a class="text-link" href="#about">
                 About
             </a>
-            <a href="#contact">
+            <a class="text-link" href="#contact">
                 Contact
             </a>
-            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <a  href="javascript:void(0);" class="icon" onclick="navFunction()">
                 <i class="fa fa-bars"></i>
             </a>
 
-        <button id="theme-button">
-            <img id="iconImage" src='./images/logo-icons/bxs-moon.png'/> 
-        </button>
+                <button id="theme-button">
+                    <img id="iconImage" src='./images/logo-icons/bxs-moon.png' alt="toggle theme button icon"/> 
+                </button>
 
+                <button id="github-link">
+                    <a href="https://github.com/jzhupan" target="_blank"> 
+                        <img class="image-link" src='./images/GitHub.png' alt='github icon that takes user to a github page'/> 
+                    </a>
+                </button>
+                
+                <button id="linkedin-link">
+                    <a href="https://www.linkedin.com/in/jenniezp/" target="_blank"> 
+                        <img class="image-link" src='./images/logo-icons/linkedin.png' alt='linkedin icon that takes user to a linkedin page'/> 
+                    </a>
+                </button>
+               
+               
     </div>
-
-    <section class="hidden">
-        <div class="home">
-            <h1>Hi, I'm Jennie Zhu Pan</h1>
+    <section class="hidden" id="home">
+        <div class="home" >
+            <h1 >Hi, I'm Jennie Zhu Pan</h1>
         <p >A self-taught Front-End Developer, Designer & Illustrator
             with some professional experience. Enthusiastic about the prospect of collaborating with a team, addressing complex challenges, and producing functional and engaging websites for businesses and their clientele.
         </p>  
         </div>
     </section>
 
-    <section class="hidden">
+    <section class="hidden" id="about">
         <div class="about">
             <h1>About</h1>
         <p>
-            After few years of Freelancing, I took a bold leap into programming, I chose to specialize in Front-end development assuming it would be a smoother transition. However, I quickly discovered that this shift was far from easy- becoming a thrilling challenge, but demanding myself to leave behind the familiar and embracing the singular path forward with a strong determination.
+            After a few years of freelancing in illustration and graphic design, I took a bold leap into programming, choosing to specialize in front-end development, assuming it would be a smoother transition. However, I quickly discovered that this shift was far from easy. It became a thrilling challenge, demanding that I leave behind the familiar and embrace a singular path forward with strong determination.
         </p>  
         </div>
     </section>
     
-    <section class="hidden projects">
-        <h1>Projects:</h1>
-        <div class="project-section">
+    <section class="hidden projects" >
+        <h1 id="projects">Projects:</h1>
+        <div class="project-section" >
                 <h2 class="inline">Image Text Translator</h2> 
                 <h3 class="inline">(03/2023 - 04/2023)</h3>
          
@@ -108,11 +120,7 @@
                 <span class="inline">Live Demo (WIP)</span>
 
 
-            <!-- <div class="gallery">
-               <img src="./images/homeSS.png" alt="screenshots of a financial dashboard">
-               <img src="./images/StockSearchSS.png" alt="screenshots of a financial dashboard">
 
-            </div> -->
 
             <div class="lightbox-container">
                 <div class="gallery inline">
@@ -149,7 +157,7 @@
     </section>
 
 
-    <section class="hidden">
+    <section class="hidden" id="contact">
         <div class="contact">
         <h2>Contact</h2>
         <p>

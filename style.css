@@ -35,18 +35,36 @@ button {
     border-radius: 50%;
     background-color: var(--text);
     color: var(--secondary);
-
     text-shadow: 1px 1px var(--background);
     box-shadow: 5px 5px 5px var(--primary);
     width: 40px;
     height: 40px;
 }
 
-button img {
+#theme-button img {
     padding-top: 3px;
     width: 20px;
     height: 20px;
 }
+
+
+
+.image-link {
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: right;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
+
+.image-button { 
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
 
 body{
     background-color: var(--background);
@@ -64,7 +82,7 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 50vh;
+    min-height: 100vh;
     text-align: center;
     text-justify: auto ;
 
@@ -75,7 +93,13 @@ p, span, a {
     font-size: 15px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .home{
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -98,7 +122,7 @@ p, span, a {
     z-index: 1;
 }
 
-.topnav a{
+.topnav .text-link{
     float: left;
     display: block;
     color: var(--text);

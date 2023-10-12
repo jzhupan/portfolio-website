@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const themeButton = document.getElementById("theme-button");
-
+    const icon = document.getElementById('iconImage')
     
 
     themeButton.addEventListener("click", () => {
@@ -10,18 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const newTheme = currentTheme === "light" ? "dark" : "light";
         document.body.setAttribute("data-theme", newTheme);
 
-
-             const icon = document.getElementById('iconImage');
-             const darkTheme = document.getElementById('iconImage').src = './images/logo-icons/bxs-moon.png';
-             const lightTheme = document.getElementById('iconImage').src = './images/logo-icons/bxs-sun.png';
-
             if(newTheme === "light"){
-                icon.src = darkTheme
+                icon.src = './images/logo-icons/bxs-moon.png'
             } else if(newTheme === "dark"){
-                icon.src = lightTheme
+                icon.src = './images/logo-icons/bxs-sun.png'
             }
-
-            
 
 
     });
@@ -52,11 +45,6 @@ function navFunction(){
     } else {
         x.className = 'topnav';
     }
-}
-
-function submitFunction(){
-    document.getElementById('myForm').submit();
-    alert('Thank you for submitting! This is just a demo, please contact me through jzhupan@gmail.com for real inquiries.')
 }
 
 
