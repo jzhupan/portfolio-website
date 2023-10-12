@@ -227,14 +227,25 @@ h1 {
 .contact-form{
     border-radius: 5px;
     border: 3px solid var(--text);
-    padding: 10px;
+    padding: 3% 5%;
     box-sizing: border-box;
     width: 100%;
    
 }
+.reset-button {
+
+   position: relative;
+   float: right;
+   margin: 2% auto;
+   padding: 1%;
+   display: inline;
+   background-color: var(--primary);
+   color: var(--background);
+   border: 1px solid var(--text);
+}
 
 input[type=text], select, textarea {
-    width: 90%;
+    width: 95%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
@@ -295,3 +306,4 @@ input[type=text], select, textarea {
     text-decoration: none;
     margin: 0 8% 2% 8%;
 }
+
