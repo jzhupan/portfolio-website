@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+:root {
+    /*Light mode*/
+    --primary-light:  #A8E6CE;
+    --secondary-light: #FFD3B5;
+    --background-light: #FF8C94;
+    --text-light:  #DCEDC2; 
+
+    /*Dark mode*/
+    --primary-dark: #FF6666;
+    --secondary-dark: #CCCCCC;
+    --background-dark: #333333;
+    --text-dark: #66CCCC;
+}
+
+body[data-theme="light"] {
+    --primary: var(--primary-light);
+    --secondary: var(--secondary-light);
+    --background: var(--background-light);
+    --text: var(--text-light);
+}
+
+body[data-theme="dark"] {
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --background: var(--background-dark);
+    --text: var(--text-dark);
+}
+
+
+button {
+    margin: 0 1%;
+    float: right;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--text);
+    color: var(--secondary);
+    text-shadow: 1px 1px var(--background);
+    box-shadow: 5px 5px 5px var(--primary);
+    width: 40px;
+    height: 40px;
+}
+
+#theme-button img {
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.image-link {
+    padding-top: 3px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align: right;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
+
+.image-button { 
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Croissant One', cursive;
+    padding: 0;
+    margin: 0;
+}   
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    text-align: center;
+    text-justify: auto ;
+}
+
+p, span {
+    font-family: 'Croissant One', serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    font-family: 'Croissant One', serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--primary);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.home{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.home, .about {
+    text-justify: auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+#nav-bar {
+    position: fixed;
+    padding: 1% 0 1% 0;
+    overflow: hidden;
+    text-align: center;    
+    width: 100%;
+    background-color: var(--background);
+    background-image: url(../images/white-flower-textured-background-design.jpg);
+    background-blend-mode: multiply ;
+    background-size: contain;
+    z-index: 1;
+}
+
+.topnav .text-link{
+    float: left;
+    display: block;
+    color: var(--text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto 10px;
+}
+
+.topnav a:hover {
+    background-color: var(--text);
+    color: var(--background);
+}
+
+.topnav a.active {
+
+    background-color: var(--primary);
+    color: var(--background)
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .topnav a:not(:first-child){display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.projects {
+    text-align: center;
+    margin: 3%;
+    padding: 1%
+}
+
+.project-section{
+    max-width: 900px;
+    margin-bottom: 8%;
+}
+
+.gif-demo{
+    width: 100%;
+   height: 100%;
+}
+
+
+
+.logos-container {
+    width: auto;
+    display: inline-flex;
+    padding: 10px;
+    margin: 1%;
+    border-radius: 25px;
+    border: solid 3px var(--primary);
+    box-shadow: 15px 10px var(--secondary);
+    background-color: whitesmoke;
+}
+.logos-container2 {
+    width: auto;
+    display: inline-flex;
+    padding: 10px;
+    margin: 1% -25%;
+    border-radius: 25px;
+    border: solid 3px var(--primary);
+    box-shadow: 15px 10px var(--secondary);
+    background-color: whitesmoke;
+}
+
+.logo {
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+}
+
+.logo img {
+    height: 70px;
+
+    text-align: center;
+}
+
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+
+.contact-form{
+    border-radius: 5px;
+    border: 3px solid var(--text);
+    padding: 3% 5%;
+    box-sizing: border-box;
+    width: 100%;
+   
+}
+.reset-button {
+
+   position: relative;
+   float: right;
+   margin: 2% auto;
+   padding: 1%;
+   display: inline;
+   background-color: var(--primary);
+   color: var(--background);
+   border: 1px solid var(--text);
+}
+
+input[type=text], select, textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+.row {
+    float: left;
+    width: 500px;
+    margin-top: 6px;
+    padding: 20px; 
+    text-align: left;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.inline {
+    display: inline-flex;
+    position: relative;
+    margin: 1%;
+
+}
+
+.lightbox-container {
+    width: 100%;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gallery img{
+    display: grid;
+    position: relative;
+    height: 350px;
+    margin: 10px;
+}
+
+.target-blank {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0 8% 2% 8%;
+    
+}
+
