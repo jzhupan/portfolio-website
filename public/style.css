@@ -198,8 +198,6 @@ html {
 }
 
 
-
-
 .projects {
     text-align: center;
     margin: 3%;
@@ -208,7 +206,7 @@ html {
 
 .project-section{
     max-width: 900px;
-    margin-bottom: 8%;
+
 }
 
 .gif-demo{
@@ -223,11 +221,13 @@ html {
     display: inline-flex;
     padding: 10px;
     margin: 1%;
+    margin-bottom: 10%;
     border-radius: 25px;
     border: solid 3px var(--primary);
     box-shadow: 15px 10px var(--secondary);
     background-color: whitesmoke;
 }
+
 .logos-container2 {
     width: auto;
     display: inline-flex;
