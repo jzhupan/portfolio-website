@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 :root {
     /*Light mode*/
     --primary-light:  #A8E6CE;
@@ -87,17 +89,18 @@ section {
     text-justify: auto ;
 }
 
+h1 {
+
+    font-size: 35px;
+}
+
 p, span {
-    font-family: 'Croissant One', serif;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
+
     font-size: 18px;
 }
 
 a {
-    font-family: 'Croissant One', serif;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
+
     color: var(--primary);
 }
 
@@ -118,14 +121,15 @@ html {
 }
 
 #nav-bar {
+
     position: fixed;
     padding: 1% 0 1% 0;
     overflow: hidden;
     text-align: center;    
     width: 100%;
     background-color: var(--background);
-    background-image: url(../images/white-flower-textured-background-design.jpg);
-    background-blend-mode: multiply ;
+    background-image: url(./images/white-flower-textured-background-design.jpg);
+    background-blend-mode:multiply ;
     background-size: contain;
     z-index: 1;
 }
@@ -193,9 +197,8 @@ html {
     transform: translateX(0);
 }
 
-h1 {
-    font-size: 35px;
-}
+
+
 
 .projects {
     text-align: center;
@@ -347,3 +350,9 @@ input[type=text], select, textarea {
     
 }
 
+.project-description, li {
+
+    font-size: 18px;
+    text-align: left;
+
+}
