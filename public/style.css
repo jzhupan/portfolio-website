@@ -3,10 +3,10 @@
 }
 :root {
     /*Light mode*/
-    --primary-light:  #A8E6CE;
-    --secondary-light: #FFD3B5;
-    --background-light: #FF8C94;
-    --text-light:  #DCEDC2; 
+    --primary-light:  #fc9cac;
+    --secondary-light: #DB7093;
+    --background-light: #FFDAB9;
+    --text-light: #FF69B4;
 
     /*Dark mode*/
     --primary-dark: #FF6666;
@@ -70,7 +70,7 @@ button {
 
 body{
     background-color: var(--background);
-    color: var(--text);
+    color: var(--secondary);
     font-family: 'Croissant One', cursive;
     padding: 0;
     margin: 0;
@@ -90,7 +90,6 @@ section {
 }
 
 h1 {
-
     font-size: 35px;
 }
 
@@ -100,7 +99,6 @@ p, span {
 }
 
 a {
-
     color: var(--primary);
 }
 
@@ -150,9 +148,8 @@ html {
 }
 
 .topnav a.active {
-
     background-color: var(--primary);
-    color: var(--background)
+    color: var(--secondary)
 }
 
 .topnav .icon {
