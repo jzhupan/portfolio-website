@@ -31,7 +31,7 @@ body[data-theme="dark"] {
 
 
 button {
-    margin: 0 1%;
+    margin: 14px 16px;
     float: right;
     border: none;
     border-radius: 50%;
@@ -39,8 +39,6 @@ button {
     color: var(--secondary);
     text-shadow: 1px 1px var(--background);
     box-shadow: 5px 5px 5px var(--primary);
-    width: 40px;
-    height: 40px;
 }
 
 #theme-button img {
@@ -48,8 +46,6 @@ button {
     width: 20px;
     height: 20px;
 }
-
-
 
 .image-link {
     padding-top: 3px;
@@ -154,6 +150,7 @@ html {
 
 .topnav .icon {
     display: none;
+    padding: 14px 16px;
 }
 
 @media screen and (max-width: 600px){
