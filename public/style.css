@@ -3,16 +3,22 @@
 }
 :root {
     /*Light mode*/
-    --primary-light:  #fc9cac;
-    --secondary-light: #DB7093;
-    --background-light: #FFDAB9;
-    --text-light: #FF69B4;
+    --primary-light: #CCFF99;
+    --secondary-light: #ffde83;
+    --background-light: #6f3dcc;
+    --text-light: #FFFFFF;
 
     /*Dark mode*/
-    --primary-dark: #FF6666;
-    --secondary-dark: #CCCCCC;
-    --background-dark: #333333;
-    --text-dark: #66CCCC;
+    /* --primary-dark: #AF69EE;
+    --secondary-dark: #EBEBEB;
+    --background-dark: #131111;
+    --text-dark: #ff44a1; */
+
+    --primary-dark: #FF33FF;
+    --secondary-dark: #33FFFF;
+    --background-dark: #000000;
+    --text-dark: #dfdfdf;
+
 }
 
 body[data-theme="light"] {
@@ -33,12 +39,12 @@ body[data-theme="dark"] {
 button {
     margin: 14px 16px;
     float: right;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--text);
-    color: var(--secondary);
-    text-shadow: 1px 1px var(--background);
-    box-shadow: 5px 5px 5px var(--primary);
+    border: 1px solid var(--pr);
+    border-radius: 40%;
+    background-color: var(--primary);
+    color: var(--text);
+    text-shadow: 1px 1px var(--secondary);
+    box-shadow: 5px 5px 5px var(--secondary);
 }
 
 #theme-button img {
@@ -66,7 +72,7 @@ button {
 
 body{
     background-color: var(--background);
-    color: var(--secondary);
+    color: var(--text);
     font-family: 'Croissant One', cursive;
     padding: 0;
     margin: 0;
@@ -87,11 +93,15 @@ section {
 
 h1 {
     font-size: 35px;
+    color: var(--secondary);
+}
+h2, h3, h4, h5, h6 {
+    color: var(--primary);
 }
 
 p, span {
-
     font-size: 18px;
+    color: var(--text);
 }
 
 a {
@@ -130,7 +140,7 @@ html {
 .topnav .text-link{
     float: left;
     display: block;
-    color: var(--text);
+    color: var(--secondary);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -139,13 +149,13 @@ html {
 }
 
 .topnav a:hover {
-    background-color: var(--text);
+    background-color: var(--primary);
     color: var(--background);
 }
 
-.topnav a.active {
+.topnav a:active {
     background-color: var(--primary);
-    color: var(--secondary)
+    color: var(--background);
 }
 
 .topnav .icon {

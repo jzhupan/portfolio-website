@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     themeButton.addEventListener("click", () => {
 
         const currentTheme = document.body.getAttribute("data-theme");
-        const newTheme = currentTheme === "light" ? "dark" : "light";
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
         document.body.setAttribute("data-theme", newTheme);
 
-            if(newTheme === "light"){
-                icon.src = './images/logo-icons/bxs-moon.png'
-            } else if(newTheme === "dark"){
+            if(newTheme === "dark"){
                 icon.src = './images/logo-icons/bxs-sun.png'
+            } else if(newTheme === "light"){
+                icon.src = './images/logo-icons/bxs-moon.png'
             }
 
 
