@@ -35,6 +35,10 @@ body[data-theme="dark"] {
     --text: var(--text-dark);
 }
 
+#responsive {
+    width: 100%;
+}
+
 
 button {
     margin: 14px 16px;
@@ -45,6 +49,8 @@ button {
     color: var(--text);
     text-shadow: 1px 1px var(--secondary);
     box-shadow: 5px 5px 5px var(--secondary);
+    width: min-content;
+
 }
 
 #theme-button img {
@@ -128,14 +134,16 @@ html {
     position: fixed;
     padding: 1% 0 1% 0;
     overflow: hidden;
-    text-align: center;    
+    text-align: center; 
     width: 100%;
+    min-width: 200px;
     background-color: var(--background);
     background-image: url(./images/white-flower-textured-background-design.jpg);
     background-blend-mode:multiply ;
     background-size: contain;
     z-index: 1;
 }
+
 
 .topnav .text-link{
     float: left;
@@ -146,6 +154,7 @@ html {
     text-decoration: none;
     font-size: 17px;
     margin: auto 10px;
+
 }
 
 .topnav a:hover {
