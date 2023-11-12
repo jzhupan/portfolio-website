@@ -1,297 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jennie's Dev Portfolio</title>
-    
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./lightbox.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dosis:wght@200;400&family=Open+Sans&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./lightbox.css" />
+    <link rel="stylesheet" href="./particles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dosis:wght@200;400&family=Open+Sans&family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="app.js"></script>
     <script defer src="lightbox-plus-jquery.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+    "></script>
+  </head>
 
-
-</head>
-<body data-theme="dark">
-    <div id="responsive">
-
-    
+  <body data-theme="dark">
+    <div id="particles-js"></div>
     <div class="topnav" id="nav-bar">
-            <a class="text-link" href="#home" class="active">
-                Home
-            </a>
-            <a class="text-link" href="#projects">
-                Projects
-            </a>
-            <a class="text-link" href="#about">
-                About
-            </a>
-            <a class="text-link" href="#contact">
-                Contact
-            </a>
-                <button class="topnav" id="theme-button">
-                    <img id="iconImage" src='./images/logo-icons/bxs-sun.png' alt="toggle theme button icon"/> 
-                </button>
-                <button class="topnav" >
-                    <a href="https://github.com/jzhupan" target="_blank"> 
-                        <img class="image-link" src='./images/GitHub.png' alt='github icon that takes user to a github page'/> 
-                    </a>
-                </button>
-                <button class="topnav" >
-                    <a href="https://www.linkedin.com/in/jenniezp/" target="_blank"> 
-                        <img class="image-link" src='./images/logo-icons/linkedin.png' alt='linkedin icon that takes user to a linkedin page'/> 
-                    </a>
-                </button>   
-                <a  href="javascript:void(0);" class="icon" onclick="navFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>             
+      <a class="text-link" href="#home" class="active"> Home </a>
+      <a class="text-link" href="#projects"> Projects </a>
+      <a class="text-link" href="#about"> About </a>
+      <a class="text-link" href="#contact"> Contact </a>
+      <button class="topnav" id="theme-button">
+        <img
+          id="iconImage"
+          src="./images/logo-icons/bxs-sun.png"
+          alt="toggle theme button icon"
+        />
+      </button>
+      <button class="topnav">
+        <a href="https://github.com/jzhupan" target="_blank">
+          <img
+            class="image-link"
+            src="./images/GitHub.png"
+            alt="github icon that takes user to a github page"
+          />
+        </a>
+      </button>
+      <button class="topnav">
+        <a href="https://www.linkedin.com/in/jenniezp/" target="_blank">
+          <img
+            class="image-link"
+            src="./images/logo-icons/linkedin.png"
+            alt="linkedin icon that takes user to a linkedin page"
+          />
+        </a>
+      </button>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <section class="hidden" id="home">
-        <div class="home" >
-            <h1 >Hi, I'm Jennie Zhu Pan</h1>
-        <p >A self-taught Front-End Developer, Designer & Illustrator
-            with some professional experience. Thrilled to keep learning, enthusiastic about the prospect of collaborating with a team, addressing complex challenges, and producing functional and engaging websites for businesses and their clientele.
-        </p>  
+    <div id="responsive ">
+      <section class="hidden" id="home">
+        <div class="home">
+          <h1>Hi, I'm Jennie Zhu Pan</h1>
+          <p>
+            A self-taught Front-End Developer, Designer & Illustrator with some
+            professional experience. Thrilled to keep learning, enthusiastic
+            about the prospect of collaborating with a team, addressing complex
+            challenges, and producing functional and engaging websites for
+            businesses and their clientele.
+          </p>
         </div>
-    </section>
-    
-    <section class="hidden projects" >
+      </section>
+
+      <section class="hidden projects">
         <h1 id="projects">Projects:</h1>
         <div class="project-section">
-            <h2 class="inline">Financial Dashboard</h2> 
-            <h3 class="inline">(07/2023 - 09/2023)</h3>
-            <p class="project-description">
+          <h2 class="inline">Financial Dashboard</h2>
+          <h3 class="inline">(07/2023 - 09/2023)</h3>
+          <p class="project-description">
+            <li>
+              Created a user-friendly Home page and dynamic router page to
+              display stocks and financial data from the Financial Modeling
+              Prep's API.
+            </li>
+            <li>
+              Designed a feature-rich interface comprising a navigation bar,
+              search bar, marquee, news section, and a sidebar with real-time
+              stock data, including prices and percentage changes.
+            </li>
+          </p>
 
-                <li>
-                Created a user-friendly Home page and dynamic router page to display stocks and financial data from the Financial Modeling Prep's API.
-                </li>
-                <li>
-                    Designed a feature-rich interface comprising a navigation bar, search bar, marquee, news section, and a sidebar with real-time stock data, including prices and percentage changes.                
-                </li>
+          <a
+            class="inline"
+            href="https://github.com/jzhupan/financial-dashboard.git"
+            target="_blank"
+            style="text-decoration: none"
+            >Click Here for Github Repo</a
+          >
+          <span class="inline">Live Demo (WIP)</span>
 
-            </p>
-     
-                <a class="inline" href="https://github.com/jzhupan/financial-dashboard.git" target="_blank" style="text-decoration:none;">Click Here for Github Repo</a> 
-                <span class="inline">Live Demo (WIP)</span>
-
-
-            <div class="lightbox-container">
-                <div class="gallery inline">
-                    <a href="./images/homeSS.png" data-lightbox="dashboard" data-title="Financial Pulse Home Page">
-                    <img src="./images/homeSS.png" alt="screenshots of a financial dashboard">
-                    </a>
-                    <a href="./images/StockSearchSS.png" data-lightbox="dashboard" data-title="Financial Pulse Stock Search Page">
-                        <img src="./images/StockSearchSS.png" alt="screenshots of a financial dashboard">
-                    </a>
-                </div>
+          <div class="lightbox-container">
+            <div class="gallery inline">
+              <a
+                href="./images/homeSS.png"
+                data-lightbox="dashboard"
+                data-title="Financial Pulse Home Page"
+              >
+                <img
+                  src="./images/homeSS.png"
+                  alt="screenshots of a financial dashboard"
+                />
+              </a>
+              <a
+                href="./images/StockSearchSS.png"
+                data-lightbox="dashboard"
+                data-title="Financial Pulse Stock Search Page"
+              >
+                <img
+                  src="./images/StockSearchSS.png"
+                  alt="screenshots of a financial dashboard"
+                />
+              </a>
             </div>
+          </div>
 
-            <a class="target-blank" href="./images/homeSS.png" target="_blank" >see full size</a>
-            <a class="target-blank" href="./images/homeSS.png" target="_blank" >see full size</a>
+          <a class="target-blank" href="./images/homeSS.png" target="_blank"
+            >see full size</a
+          >
+          <a class="target-blank" href="./images/homeSS.png" target="_blank"
+            >see full size</a
+          >
 
-            <br/>
-            <span>Notable Libraries and Frameworks used:</span>
-            <br/>
-            <div  class="logos-container">
-                <div class="logo hidden">
-                    <img src="./images/Next.js.png" alt="Next.js logo"/>
-                </div>
-                <div class="logo hidden">
-                    <img src="./images/React.png" alt="React logo"/>
-                </div>
-                <div class="logo hidden">
-                    <img src="./images/Axios.png" alt="Axios logo"/>
-                </div>
-                <div class="logo hidden">
-                    <img src="./images/Material UI.png" alt="Material UI logo"/>
-                </div>
+          <br />
+          <span>Notable Libraries and Frameworks used:</span>
+          <br />
+          <div class="logos-container">
+            <div class="logo hidden">
+              <img src="./images/Next.js.png" alt="Next.js logo" />
             </div>
-    </section>
-    <section class="hidden projects" >
-
-        <div class="project-section" >
-                <h2 class="inline">Image Text Translator</h2> 
-                <h3 class="inline">(03/2023 - 04/2023)</h3>
-         
-            <p class="project-description">
-
-                <li>
-                    Created a user friendly platform allowing users to upload images containing text, crop text images, and translate them to English.
-                </li>
-                <li>
-                    Implemented cost-effective development by utilizing free resources, making the app accessible for a wider audience.
-                </li>
-                <li>
-                    Developed a back-end system for storing uploaded images locally and ensured multilingual support.   
-                </li>
-                <li>
-                For a detailed overview and a demonstration of supported languages, please refer to the ReadMe file.
-                </li>
-
-            </p>
-            <a href="https://github.com/jzhupan/Image-To-Text-Translator-App.git" target="_blank" style="text-decoration:none;">Click Here for Github Repo</a>
-            <br/>
-            <span>Demo:</span>
-            <div class="gif-demo">
-                <video width="500" height="auto" controls>
-                    <source src="./images/demo.mp4" type="video/mp4">
-                    <source src="./images/demo.mp4" type="video/ogg">
-                  Your browser does not support the video tag.
-                  </video>
+            <div class="logo hidden">
+              <img src="./images/React.png" alt="React logo" />
             </div>
-            <br/>
-            <span>Notable Libraries and Frameworks used:</span>
-            <br/>
-            <div class="logos-container">
-                <div class="logo hidden">
-                    <img src="./images/Express.png" alt="Express logo"/>
-                </div>
-                <div class="logo hidden">
-                    <img src="./images/Bootstrap.png" alt="Bootstrap logo"/>
-                </div>
-                <div class="logo hidden">
-                    <img src="./images/JavaScript.png" alt="JavaScript logo"/>
-                </div>
-                <div class="logo hidden">
-                    <img src="./images/Axios.png" alt="Axios logo"/>
-                </div>
+            <div class="logo hidden">
+              <img src="./images/Axios.png" alt="Axios logo" />
             </div>
+            <div class="logo hidden">
+              <img src="./images/Material UI.png" alt="Material UI logo" />
+            </div>
+          </div>
         </div>
+      </section>
 
-    </div>
-    </section>
-    
-    <section class="hidden" id="about">
-        <div class="about">
-            <h1>About</h1>
-        <p>
-            After a few years of freelancing in illustration and graphic design, I took a bold leap into programming, choosing to specialize in front-end development, assuming it would be a smoother transition. However, I quickly discovered that this shift was far from easy. It became a thrilling challenge, demanding that I leave behind the familiar and embrace a singular path forward with strong determination.
-        </p>  
-        <h3>Technical Skills:</h3>
-        <h4>Front-End Development:</h4>
-        <div class="logos-container2">
-            <div class="logo2 hidden">
-            <img src="./images/JavaScript.png" alt="JavaScript logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/HTML5.png" alt="HTML5 logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/CSS3.png" alt="CSS3 logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/TypeScript.png" alt="TypeScript logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/React.png" alt="React.js logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Next.js.png" alt="Next.js logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Axios.png" alt="Axios logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/jQuery.png" alt="jQuery logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Material UI.png" alt="Material UI logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Bootstrap.png" alt="Bootstrap logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/React Bootstrap.png" alt="ReactBootstrap logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Python.png" alt="Python logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Node.js.png" alt="Node.js logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Express.png" alt="Express.js logo"/>
-                </div>
-            <div class="logo2 hidden">
-                <img src="./images/Vite.js.png" alt="Vite.js logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/NPM.png" alt="NPM logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Babel.png" alt="Babel logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Git.png" alt="Git logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/GitHub.png" alt="Github logo"/>
-            </div>
+      <section class="hidden projects">
+        <div class="project-section">
+          <h2 class="inline">Image Text Translator</h2>
+          <h3 class="inline">(03/2023 - 04/2023)</h3>
 
-            <div class="logo2 hidden">
-                <img src="./images/Firebase.png" alt="Firebase logo"/>
+          <p class="project-description">
+            <li>
+              Created a user friendly platform allowing users to upload images
+              containing text, crop text images, and translate them to English.
+            </li>
+            <li>
+              Implemented cost-effective development by utilizing free
+              resources, making the app accessible for a wider audience.
+            </li>
+            <li>
+              Developed a back-end system for storing uploaded images locally
+              and ensured multilingual support.
+            </li>
+            <li>
+              For a detailed overview and a demonstration of supported
+              languages, please refer to the ReadMe file.
+            </li>
+          </p>
+          <a
+            href="https://github.com/jzhupan/Image-To-Text-Translator-App.git"
+            target="_blank"
+            style="text-decoration: none"
+            >Click Here for Github Repo</a
+          >
+          <br />
+          <span>Demo:</span>
+          <div class="gif-demo">
+            <video width="500" height="auto" controls>
+              <source src="./images/demo.mp4" type="video/mp4" />
+              <source src="./images/demo.mp4" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <br />
+          <span>Notable Libraries and Frameworks used:</span>
+          <br />
+          <div class="logos-container">
+            <div class="logo hidden">
+              <img src="./images/Express.png" alt="Express logo" />
             </div>
-            <div class="logo2 hidden">
-                <img src="./images/Insomnia.png" alt="Insomnia logo"/>
+            <div class="logo hidden">
+              <img src="./images/Bootstrap.png" alt="Bootstrap logo" />
             </div>
-            <div class="logo2 hidden">
-                <img src="./images/Visual Studio Code (VS Code).png" alt="Visual Studio Code logo"/>
+            <div class="logo hidden">
+              <img src="./images/JavaScript.png" alt="JavaScript logo" />
             </div>
-            <div class="logo2 hidden">
-                <img src="./images/Powershell.png" alt="Powershell logo"/>
+            <div class="logo hidden">
+              <img src="./images/Axios.png" alt="Axios logo" />
             </div>
-            <div class="logo2 hidden">
-                <img src="./images/Google Cloud.png" alt="Google Cloud logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Adobe Photoshop.png" alt="Adobe Photoshop logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Adobe Illustrator.png" alt="Adobe Illustrator logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Adobe XD.png" alt="Adobe XD logo"/>
-            </div>
-            <div class="logo2 hidden">
-                <img src="./images/Adobe Premiere Pro.png" alt="Adobe Premier Pro logo"/>
-            </div>
-            <div class="logo2 squares hidden">
-                <img src="./images/After Effects.png" alt="After Effects logo"/>
-            </div>
-            <div class="logo2 squares hidden">
-                <img src="./images/Behance.png" alt="Behance logo"/>
-            </div>
+          </div>
         </div>
+      </section>
 
-        </div>
-    </section>
-    <section class="hidden" id="contact">
+      <section class="hidden" id="contact">
         <div class="contact">
-        <h1>Contact</h1>
-        <p>
-           For inquiries please send email to contactme@jenniedev.com
-        </p> 
-            <div class="row">
-                <div class="contact-form">
-                    <form action="mailto:contactme@jenniedev.com" method="post" enctype="text/plain">
-                        Name:<br>
-                        <input type="text" name="name" placeholder="Your name here..."><br>
-                        E-mail:<br>
-                        <input type="text" name="mail" placeholder="Your email here..."><br>
-                        Comment:<br>
-                        <input type="text" name="comment" size="100" placeholder="Your comment here..."><br><br>
-                        <input type="submit" value="Open Form">
-                        <input class="reset-button" type="reset" value="Reset">
-                        </form>
-                </div>
+          <h1>Contact</h1>
+          <p>For inquiries please send email to contactme@jenniedev.com</p>
+          <div class="row">
+            <div class="contact-form">
+              <form
+                action="mailto:contactme@jenniedev.com"
+                method="post"
+                enctype="text/plain"
+              >
+                Name:<br />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name here..."
+                /><br />
+                E-mail:<br />
+                <input
+                  type="text"
+                  name="mail"
+                  placeholder="Your email here..."
+                /><br />
+                Comment:<br />
+                <input
+                  type="text"
+                  name="comment"
+                  size="100"
+                  placeholder="Your comment here..."
+                /><br /><br />
+                <input type="submit" value="Open Form" />
+                <input class="reset-button" type="reset" value="Reset" />
+              </form>
             </div>
+          </div>
         </div>
-    </section>
-</div>
-</body>
+      </section>
+
+      <section class="hidden" id="about">
+        <div class="about">
+          <h1>About</h1>
+          <p>
+            After a few years of freelancing in illustration and graphic design,
+            I took a bold leap into programming, choosing to specialize in
+            front-end development, assuming it would be a smoother transition.
+            However, I quickly discovered that this shift was far from easy. It
+            became a thrilling challenge, demanding that I leave behind the
+            familiar and embrace a singular path forward with strong
+            determination.
+          </p>
+          <h3>Technical Skills:</h3>
+          <h4>Front-End Development:</h4>
+          <div class="logos-container2">
+            <div class="logo2 hidden">
+              <img src="./images/JavaScript.png" alt="JavaScript logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/HTML5.png" alt="HTML5 logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/CSS3.png" alt="CSS3 logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/TypeScript.png" alt="TypeScript logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/React.png" alt="React.js logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Next.js.png" alt="Next.js logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Axios.png" alt="Axios logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/jQuery.png" alt="jQuery logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Material UI.png" alt="Material UI logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Bootstrap.png" alt="Bootstrap logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img
+                src="./images/React Bootstrap.png"
+                alt="ReactBootstrap logo"
+              />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Python.png" alt="Python logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Node.js.png" alt="Node.js logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Express.png" alt="Express.js logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Vite.js.png" alt="Vite.js logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/NPM.png" alt="NPM logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Babel.png" alt="Babel logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Git.png" alt="Git logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/GitHub.png" alt="Github logo" />
+            </div>
+
+            <div class="logo2 hidden">
+              <img src="./images/Firebase.png" alt="Firebase logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Insomnia.png" alt="Insomnia logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img
+                src="./images/Visual Studio Code (VS Code).png"
+                alt="Visual Studio Code logo"
+              />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Powershell.png" alt="Powershell logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Google Cloud.png" alt="Google Cloud logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img
+                src="./images/Adobe Photoshop.png"
+                alt="Adobe Photoshop logo"
+              />
+            </div>
+            <div class="logo2 hidden">
+              <img
+                src="./images/Adobe Illustrator.png"
+                alt="Adobe Illustrator logo"
+              />
+            </div>
+            <div class="logo2 hidden">
+              <img src="./images/Adobe XD.png" alt="Adobe XD logo" />
+            </div>
+            <div class="logo2 hidden">
+              <img
+                src="./images/Adobe Premiere Pro.png"
+                alt="Adobe Premier Pro logo"
+              />
+            </div>
+            <div class="logo2 squares hidden">
+              <img src="./images/After Effects.png" alt="After Effects logo" />
+            </div>
+            <div class="logo2 squares hidden">
+              <img src="./images/Behance.png" alt="Behance logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
