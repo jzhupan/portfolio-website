@@ -13,3 +13,4 @@ The website will contain my notable projects that I made including:
 - [Tech icons](https://boxicons.com/)
 - [Loading gif](https://loading.io/)
 - [Hosting and Deployment](https://firebase.google.com/)
+- [Particles.js by Vicent Garreau](https://github.com/VincentGarreau/particles.js/)
