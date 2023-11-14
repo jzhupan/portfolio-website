@@ -7,12 +7,6 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
-const particlesJS = window.particlesJS;
-
-particlesJS.load("particles-js", "/particlesjs-config.json", function () {
-  console.log("callback - app.js config loaded");
-});
-
 var pJS = function (tag_id, params) {
   var canvas_el = document.querySelector(
     "#" + tag_id + " > .particles-js-canvas-el"
@@ -877,7 +871,8 @@ var pJS = function (tag_id, params) {
         init();
       }
     } else if (
-      /* on click event */
+
+    /* on click event */
       pJS.interactivity.events.onclick.enable &&
       isInArray("bubble", pJS.interactivity.events.onclick.mode)
     ) {
