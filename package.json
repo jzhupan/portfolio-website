@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "firebase": "^10.5.0"
+    "firebase": "^10.5.0",
+    "particles.js": "^2.0.0"
   }
 }
