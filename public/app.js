@@ -1,6 +1,13 @@
-particlesJS.load("particles-js", "../particlesjs-config.json", function () {
-  //console.log("callback - app.js config loaded");
-});
+const particlesJS = window.particlesJS;
+
+particlesJS.load(
+  "particles-js",
+  "../particlesjs-config.json",
+  null,
+  function () {
+    console.log("callback - app.js config loaded");
+  }
+);
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeButton = document.getElementById("theme-button");
