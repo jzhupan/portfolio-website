@@ -8,6 +8,7 @@ body {
   padding: 0;
   height: 100%;
   min-height: 100%;
+  width: 95vw;
   z-index: 2;
 }
 
@@ -96,8 +97,7 @@ body::-webkit-scrollbar {
 }
 
 section {
-  margin: 10px;
-
+  margin: 10px auto;
   display: grid;
   place-items: center;
   align-content: center;
@@ -180,6 +180,7 @@ html {
 .topnav .icon {
   display: none;
   padding: 14px 16px;
+  margin: 1% 3%;
 }
 
 @media screen and (max-width: 600px) {
@@ -235,6 +236,7 @@ html {
 .gif-demo {
   width: 100%;
   height: 100%;
+  z-index: 3;
 }
 
 .git-demo,
@@ -244,12 +246,13 @@ video {
 
 .logos-container {
   width: auto;
+  min-width: 100px;
   display: inline-flex;
   padding: 10px;
   margin: 1%;
   border-radius: 25px;
   border: solid 3px var(--primary);
-  box-shadow: 15px 10px var(--secondary);
+  box-shadow: 10px 5px var(--secondary);
   background-color: whitesmoke;
 }
 
@@ -281,8 +284,8 @@ video {
 }
 
 .logos-container2 {
-  width: 100%;
-  height: 100%;
+  width: auto;
+
   min-width: 100px;
   display: inline-flex;
   flex-wrap: wrap;
@@ -290,7 +293,7 @@ video {
   margin: 1% 0;
   border-radius: 25px;
   border: solid 3px var(--primary);
-  box-shadow: 15px 10px var(--secondary);
+  box-shadow: 10px 5px var(--secondary);
   background-color: whitesmoke;
 }
 
@@ -309,23 +312,29 @@ video {
   transition-delay: 100ms;
 }
 
-.contact {
-  width: 100%;
-  align-self: center;
-  display: contents;
+#contact {
+  padding-bottom: 10%;
 }
 
-.contact-form {
+.contact-div h1 {
+  text-align: center;
+}
+
+.contact-div {
   text-align: left;
   border-radius: 5px;
   border: 3px solid var(--text);
+  background: var(--background);
   box-sizing: border-box;
   max-width: 50%;
+  min-width: 350px;
+  width: 100vw;
 }
 
-.contact-form,
-input {
-  padding: 3% 5%;
+.contact-div,
+input,
+form {
+  padding: 1% 3%;
 }
 
 .reset-button {
@@ -390,8 +399,8 @@ input[type="submit"] {
 .gallery img {
   display: inline-flex;
   flex-wrap: wrap;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
 }
 
 .target-blank {
@@ -410,4 +419,21 @@ li {
 
 .project-description {
   text-align: center;
+}
+
+footer {
+  width: 100vw;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--text);
+  z-index: 2;
+}
+
+.left {
+  float: left;
+  margin: 2% 1%;
+}
+.right {
+  float: right;
+  margin: 2% 1%;
 }
