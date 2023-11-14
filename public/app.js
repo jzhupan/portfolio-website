@@ -109,9 +109,13 @@ const pjsConfig = {
   retina_detect: true,
 };
 
-particlesJS.load("particles-js", "/particlesjs-config.json", function () {
-  console.log("callback - app.js config loaded");
+particlesJS("particles-js", pjsConfig, function () {
+  console.log("callback - particles.js config loaded");
 });
+
+// particlesJS.load("particles-js", "/particlesjs-config.json", function () {
+//   console.log("callback - app.js config loaded");
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeButton = document.getElementById("theme-button");
