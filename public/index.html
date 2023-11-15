@@ -338,35 +338,27 @@
       <section class="hidden" id="contact">
         <div class="contact-div">
           <h1>Contact</h1>
-          <p>For inquiries please send email to contactme@jenniedev.com</p>
+          <p>
+            For inquiries please send email to contactme@jenniedev.com<br />
+            or use the form below, it will open your default mail window.
+          </p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+          <label for="email">Email:</label>
 
-          <form
-            action="mailto:contactme@jenniedev.com"
-            method="post"
-            enctype="text/plain"
-          >
-            Name:<br />
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name here..."
-            /><br />
-            E-mail:<br />
-            <input
-              type="text"
-              name="mail"
-              placeholder="Your email here..."
-            /><br />
-            Comment:<br />
-            <input
-              type="text"
-              name="comment"
-              size="100"
-              placeholder="Your comment here..."
-            /><br /><br />
-            <input type="submit" value="Open Form" />
-            <input class="reset-button" type="reset" value="Reset" />
-          </form>
+          <input type="text" id="email" />
+          <label for="message">Message:</label>
+
+          <textarea type="text" id="message"></textarea>
+
+          <a id="mailto-anchor" hidden></a>
+
+          <input
+            id="emailButton"
+            type="button"
+            value="Send"
+            onclick="populateEmail()"
+          />
         </div>
       </section>
     </div>

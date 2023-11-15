@@ -54,3 +54,14 @@ if (!link) {
   document.head.appendChild(link);
 }
 link.href = "./images/logo-icons/black-icon-transparentbg.png";
+
+function populateEmail() {
+  let name = document.getElementById("name").value;
+  let message = document.getElementById("message").value;
+  let email = document.getElementById("email").value;
+
+  let emailAnchor = document.getElementById("mailto-anchor");
+
+  emailAnchor.href = `mailto:contactme@jenniedev.com?subject=Hello Jennie, this is ${name}&body=${message}'`;
+  emailAnchor.click();
+}
