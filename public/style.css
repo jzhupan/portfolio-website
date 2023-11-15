@@ -19,10 +19,6 @@ body {
   --text-light: #ffffff;
 
   /*Dark mode*/
-  /* --primary-dark: #AF69EE;
-    --secondary-dark: #EBEBEB;
-    --background-dark: #131111;
-    --text-dark: #ff44a1; */
 
   --primary-dark: #ff33ff;
   --secondary-dark: #33ffff;
@@ -150,6 +146,7 @@ html {
   width: 100vw;
   min-width: fit-content;
   background-color: var(--background);
+  box-shadow: 0 5px 15px 0 var(--primary);
   z-index: 2;
 }
 
