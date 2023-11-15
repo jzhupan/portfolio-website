@@ -150,9 +150,6 @@ html {
   width: 100vw;
   min-width: fit-content;
   background-color: var(--background);
-  background-image: url(./images/white-flower-textured-background-design.jpg);
-  background-blend-mode: color-burn;
-  background-size: contain;
   z-index: 2;
 }
 
