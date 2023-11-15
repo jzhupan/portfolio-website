@@ -408,10 +408,6 @@ footer {
   color: var(--text);
 }
 
-.left {
-  float: left;
-  margin: 2% 1%;
-}
 .right {
   float: right;
   margin: 2% 1%;
