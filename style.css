@@ -9,6 +9,13 @@ body {
   height: 100%;
   min-height: 100%;
   width: 95vw;
+  text-align: left;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 :root {
@@ -102,8 +109,6 @@ section {
   align-content: center;
   width: 100vw;
   min-height: 100vh;
-  text-align: center;
-  text-justify: auto;
 }
 
 h1 {
@@ -133,11 +138,23 @@ html {
   scroll-behavior: smooth;
 }
 
-.home-section,
+.home-section {
+  text-align: left;
+  text-justify: auto;
+  width: 80%;
+  margin-left: 2%;
+}
+
 .about {
   text-align: center;
   width: 80%;
   min-width: 50%;
+}
+
+.about > p {
+  text-align: left;
+  text-justify: auto;
+  margin-left: 2%;
 }
 
 #nav-bar {
@@ -217,10 +234,6 @@ html {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-}
-
-.projects {
-  text-align: center;
 }
 
 .project-section {
