@@ -138,14 +138,18 @@ html {
   scroll-behavior: smooth;
 }
 
-.home-section {
+.home-section h1 {
+  text-align: center;
+}
+
+.home-section p {
   text-align: left;
   text-justify: auto;
   width: 80%;
   margin-left: 2%;
 }
 
-.about {
+.about h1 {
   text-align: center;
   width: 80%;
   min-width: 50%;
