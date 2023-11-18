@@ -127,7 +127,6 @@ p,
 span {
   font-size: 18px;
   color: var(--text);
-  text-align: center;
 }
 
 a {
@@ -138,6 +137,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.home-section h1 {
+  text-align: center;
+}
+
 .home-section {
   text-align: left;
   text-justify: auto;
@@ -145,7 +148,7 @@ html {
   margin-left: 2%;
 }
 
-.about {
+.about h1 {
   text-align: center;
   width: 80%;
   min-width: 50%;
