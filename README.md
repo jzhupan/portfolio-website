@@ -14,3 +14,4 @@ The website will contain my notable projects that I made including:
 - [Loading gif](https://loading.io/)
 - [Hosting and Deployment](https://firebase.google.com/)
 - [Particles.js by Vicent Garreau](https://github.com/VincentGarreau/particles.js/)
+- [Other Icons](https://www.flaticon.com/free-icon/art-studies_5404889?term=art&page=1&position=4&origin=tag&related_id=5404889)
